@@ -11,3 +11,9 @@ test("should return number of woofs", function() {
     expect(['a', 'b', 'c']).toContain('b');
     expect(['a', 'b', 'c']).toContain('c');
 });
+
+test("should return null when not given a string", () => {
+    // const result = woof();
+    // expect(result).toBeNull();
+    expect(() => woof()).toThrow("MUST be a string");
+})
