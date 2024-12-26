@@ -17,3 +17,11 @@ test("should return null when not given a string", () => {
     // expect(result).toBeNull();
     expect(() => woof()).toThrow("MUST be a string");
 })
+
+test("should return null when not given a string", () => {
+    // const result = woof();
+    // expect(result).toBeNull();
+    expect(() => woof()).toThrow("MUST be a string");
+})
+
+test.todo("should not allow numbers to be passed");
